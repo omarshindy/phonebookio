@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'contactio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': env('POSTGRES_DB'), 
         'USER': env('POSTGRES_USER'), 
         'PASSWORD': env('POSTGRES_PASSWORD'),
@@ -88,7 +88,8 @@ DATABASES = {
     }
 }
 
-
+LOGIN_REDIRECT_URL=''
+LOGOUT_REDIRECT_URL=''
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
