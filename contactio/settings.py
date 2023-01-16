@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'contactio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': env('DBNAME'), 
-        'USER': env('DBUSER'), 
-        'PASSWORD': env('DBPASS'),
+        'NAME': env('POSTGRES_DB'), 
+        'USER': env('POSTGRES_USER'), 
+        'PASSWORD': env('POSTGRES_PASSWORD'),
         'HOST': 'db', 
         'PORT': '5432',
     }

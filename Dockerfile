@@ -1,6 +1,10 @@
 # pull official base image
 FROM python:3.9.6-alpine
 
+ENV PIP_DISABLE_PIP_VERSION_CHECK 1
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
 # set work directory
 WORKDIR /usr/src/app
 
