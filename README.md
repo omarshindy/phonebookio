@@ -1,4 +1,4 @@
-# phonebookio
+# Phonebookio
 
 
 It's a simple app to create a phonebook you can register to the app and then login to create contact info with contact type
